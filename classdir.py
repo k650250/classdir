@@ -181,7 +181,6 @@ def kfold_cross_validation_preprocess(original_dir: str, n_splits: int=5, base_d
         itersplits = range(1, n_splits+1)
         validation_dir_lists = [[os.path.join(base_dir, validation_dir_basename.format(j)) for j in itersplits if i != j] for i in itersplits]
         for i, validation_dirs in enumerate(validation_dir_lists, start=1):
-            print(validation_dirs)
             merge(
                 validation_dirs,
                 os.path.join(base_dir, train_dir_basename).format(i),
