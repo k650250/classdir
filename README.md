@@ -1,0 +1,2 @@
+# classdir
+KerasのImageDataGeneratorのflow_from_directoryに指定するディレクトリの分割・結合を行う。
